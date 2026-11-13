@@ -1,0 +1,11 @@
+# GitHub Pages site for diagonalcounty/k127-site
+# https://diagonalcounty.github.io/k127-site/
+
+title: K127
+description: Local notes, optional GitHub.
+url: https://diagonalcounty.github.io
+baseurl: /k127-site
+theme: minima
+
+exclude:
+  - README.md
