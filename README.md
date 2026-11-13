@@ -1,6 +1,6 @@
 # k127-app
 
-Privacy policy and support pages for the K127 iPad app.
+Privacy policy and support pages for the k127 iPad app.
 
 GitHub Pages:
 

@@ -4,27 +4,27 @@ title: Licenses
 
 # Licenses
 
-K127 is built on other people's work. The libraries and fonts below ship inside the iPad app — they are not fetched from a network at runtime — and we keep their licenses here and in the app (Settings → Licenses). Thank you.
+k127 is built on other people's work. The libraries and fonts below ship inside the iPad app — they are not fetched from a network at runtime — and we keep their licenses here and in the app (Settings → Licenses). Thank you.
 
 This page matches the in-app Licenses list and the notice files in [`diagonalcounty/k127`](https://github.com/diagonalcounty/k127) at `origin/main` (commit [`917d9a8a`](https://github.com/diagonalcounty/k127/commit/917d9a8a)). Each row links to the full notice or license text in this repository.
 
-K127's own source is under the MIT license in that repository. That grant does not relicense the third-party work below.
+k127's own source is under the MIT license in that repository. That grant does not relicense the third-party work below.
 
 ## Written offer for LGPL components
 
-LibXDiff is statically linked into K127, inside the libgit2 xcframework. Its header says it is licensed under the [GNU Lesser General Public License, version 2.1 or later](texts/lgpl-2.1.txt).
+LibXDiff is statically linked into k127, inside the libgit2 xcframework. Its header says it is licensed under the [GNU Lesser General Public License, version 2.1 or later](texts/lgpl-2.1.txt).
 
-The copy of LibXDiff used in K127 is the tree vendored in libgit2 1.3.1:
+The copy of LibXDiff used in k127 is the tree vendored in libgit2 1.3.1:
 
-- **Download:** [the LibXDiff source as used in K127](../source/libxdiff/)
+- **Download:** [the LibXDiff source as used in k127](../source/libxdiff/)
 - Upstream: [libgit2 `src/xdiff` at tag v1.3.1](https://github.com/libgit2/libgit2/tree/v1.3.1/src/xdiff) (commit `1f5e7f9add5c8bbc602b14feaec216c8877c3c84`)
 - Author: Davide Libenzi. The original LibXDiff project is at [xmailserver.org/xdiff-lib.html](http://www.xmailserver.org/xdiff-lib.html).
 
-That source is already available here. For at least three years after each release of K127, the K127 object files and build instructions needed to relink the app with a modified version of those LGPL libraries are available on request. To request those, [open an issue on this repository](https://github.com/diagonalcounty/k127-app/issues). Please name the K127 version (for example 0.1.0) and which library you need.
+That source is already available here. For at least three years after each release of k127, the k127 object files and build instructions needed to relink the app with a modified version of those LGPL libraries are available on request. To request those, [open an issue on this repository](https://github.com/diagonalcounty/k127-app/issues). Please name the k127 version (for example 0.1.0) and which library you need.
 
-**libiconv.** K127 dynamically links the system `libiconv` from the iOS SDK. It is not inside the xcframework. Apple's published libiconv sources have used different licenses in different drops (an older GNU libiconv drop labeled LGPL, and later Citrus / FreeBSD drops labeled BSD). Which drop a given K127 iOS build links has not been determined, so we do not list libiconv here as a definite LGPL component. If you believe the libiconv in your OS is LGPL and you need corresponding source or relink materials, open an issue and we will respond with what we can provide.
+**libiconv.** k127 dynamically links the system `libiconv` from the iOS SDK. It is not inside the xcframework. Apple's published libiconv sources have used different licenses in different drops (an older GNU libiconv drop labeled LGPL, and later Citrus / FreeBSD drops labeled BSD). Which drop a given k127 iOS build links has not been determined, so we do not list libiconv here as a definite LGPL component. If you believe the libiconv in your OS is LGPL and you need corresponding source or relink materials, open an issue and we will respond with what we can provide.
 
-This offer is only for the LGPL libraries described above. It does not change the licenses of the other components on this page, and it does not relicense K127.
+This offer is only for the LGPL libraries described above. It does not change the licenses of the other components on this page, and it does not relicense k127.
 
 ## Components in the app
 
@@ -33,11 +33,11 @@ This offer is only for the LGPL libraries described above. It does not change th
 | [MiniGit](https://github.com/diagonalcounty/MiniGit) (fork of [light-tech/MiniGit](https://github.com/light-tech/MiniGit); XGit product only) | Pinned [`bc14e1fdbe2eb24cf012a5776ff9759eb21bb174`](https://github.com/diagonalcounty/MiniGit/commit/bc14e1fdbe2eb24cf012a5776ff9759eb21bb174) | GPL-2.0 with linking exception | [minigit-NOTICE.txt](texts/minigit-NOTICE.txt). The full license text is the same as [libgit2-NOTICE.txt](texts/libgit2-NOTICE.txt). |
 | [libgit2](https://github.com/libgit2/libgit2/tree/v1.3.1) | 1.3.1, statically linked inside MiniGit's xcframework ([LibGit2-On-iOS v1.3.1](https://github.com/light-tech/LibGit2-On-iOS/releases/tag/v1.3.1)) | GPL-2.0 with linking exception | [libgit2-NOTICE.txt](texts/libgit2-NOTICE.txt) (COPYING at tag v1.3.1) |
 | [LibXDiff](../source/libxdiff/) | Vendored in libgit2 1.3.1 (`src/xdiff`); statically linked. Source is [downloadable here](../source/libxdiff/). | LGPL-2.1-or-later | [libxdiff-NOTICE.txt](texts/libxdiff-NOTICE.txt), [lgpl-2.1.txt](texts/lgpl-2.1.txt), [COPYING](../source/libxdiff/COPYING) |
-| libiconv | System library, dynamically linked (`.linkedLibrary("iconv")`). Version is the iOS SDK's libiconv, not pinned by K127. | Depends on the OS drop; see the note above | [libiconv-NOTICE.txt](texts/libiconv-NOTICE.txt) |
+| libiconv | System library, dynamically linked (`.linkedLibrary("iconv")`). Version is the iOS SDK's libiconv, not pinned by k127. | Depends on the OS drop; see the note above | [libiconv-NOTICE.txt](texts/libiconv-NOTICE.txt) |
 | [OpenSSL](https://github.com/openssl/openssl/tree/openssl-3.0.4) | 3.0.4, statically linked inside the libgit2 xcframework | Apache-2.0 | [openssl-NOTICE.txt](texts/openssl-NOTICE.txt) |
 | [libssh2](https://github.com/libssh2/libssh2/tree/libssh2-1.10.0) | 1.10.0, statically linked inside the libgit2 xcframework | BSD-3-Clause | [libssh2-NOTICE.txt](texts/libssh2-NOTICE.txt) |
 | [PCRE](https://github.com/light-tech/PCRE) | 8.45 (2021-06-15), static objects inside the libgit2 xcframework | BSD (as in the shipped `pcre.h`) | [pcre-NOTICE.txt](texts/pcre-NOTICE.txt). See [PCRE](#pcre-in-the-xcframework) below. |
-| zlib | System `libz`, dynamically linked (`.linkedLibrary("z")`). Version is the iOS SDK's zlib, not pinned by K127. | zlib | [zlib-NOTICE.txt](texts/zlib-NOTICE.txt) |
+| zlib | System `libz`, dynamically linked (`.linkedLibrary("z")`). Version is the iOS SDK's zlib, not pinned by k127. | zlib | [zlib-NOTICE.txt](texts/zlib-NOTICE.txt) |
 | [http-parser](https://github.com/libgit2/libgit2/tree/v1.3.1/deps/http-parser) | Vendored in libgit2 1.3.1; statically linked | MIT | [http-parser-NOTICE.txt](texts/http-parser-NOTICE.txt) |
 | [ntlmclient](https://github.com/libgit2/libgit2/tree/v1.3.1/deps/ntlmclient) | 0.9.0 (header); statically linked. Vendored `LICENSE.txt` is absent from libgit2 1.3.1; the MIT text is in the notice. | MIT | [ntlmclient-NOTICE.txt](texts/ntlmclient-NOTICE.txt) |
 | utf8.h | Compiled into ntlm.c inside the xcframework | The Unlicense | [utf8-h-NOTICE.txt](texts/utf8-h-NOTICE.txt) |
@@ -65,13 +65,13 @@ This offer is only for the LGPL libraries described above. It does not change th
 | Figtree | Optional sans writing face for the note in Preview | SIL OFL 1.1 | [figtree-OFL.txt](texts/figtree-OFL.txt) |
 | Crimson Pro | Optional serif writing face for the note in Preview | SIL OFL 1.1 | [crimson-pro-OFL.txt](texts/crimson-pro-OFL.txt) |
 
-The Excalidraw and Mermaid bundles also pull in transitive packages. Those are recorded in `docs/LICENSES.md` in the K127 repo. Most are MIT; some are Apache-2.0, ISC, BSD-3-Clause, or similar. They do not have their own rows in the in-app Licenses pane, so they are not given separate notice files here.
+The Excalidraw and Mermaid bundles also pull in transitive packages. Those are recorded in `docs/LICENSES.md` in the k127 repo. Most are MIT; some are Apache-2.0, ISC, BSD-3-Clause, or similar. They do not have their own rows in the in-app Licenses pane, so they are not given separate notice files here.
 
 esbuild, jsdom, and linkedom are build- or test-only tools and are not shipped in the app. They are omitted from the in-app list and from this page.
 
 ### MiniGit pin
 
-K127 pins MiniGit to [`bc14e1fdbe2eb24cf012a5776ff9759eb21bb174`](https://github.com/diagonalcounty/MiniGit/commit/bc14e1fdbe2eb24cf012a5776ff9759eb21bb174) in `Package.resolved` and the Xcode project. That revision is one commit after [`2d289c51`](https://github.com/diagonalcounty/MiniGit/commit/2d289c51bf24ab5bb60cfa0593c4fafef873f046), which added LICENSE and NOTICE on the `xgit-additions` branch. The later pin is what `origin/main` actually builds.
+k127 pins MiniGit to [`bc14e1fdbe2eb24cf012a5776ff9759eb21bb174`](https://github.com/diagonalcounty/MiniGit/commit/bc14e1fdbe2eb24cf012a5776ff9759eb21bb174) in `Package.resolved` and the Xcode project. That revision is one commit after [`2d289c51`](https://github.com/diagonalcounty/MiniGit/commit/2d289c51bf24ab5bb60cfa0593c4fafef873f046), which added LICENSE and NOTICE on the `xgit-additions` branch. The later pin is what `origin/main` actually builds.
 
 ## PCRE
 {: #pcre-in-the-xcframework}
@@ -107,7 +107,7 @@ The Licenses pane also lists community themes shipped inside the app. Each is a 
 | Things | colineckert | MIT | colineckert/obsidian-things@9b8bef93d3 (`theme.css` 2.2.4) | [obsidian-things](https://github.com/colineckert/obsidian-things) |
 | Maple | subframe7536 | MIT | subframe7536/obsidian-theme-maple@5f5521e111 (`theme.css` 1.5.12) | [obsidian-theme-maple](https://github.com/subframe7536/obsidian-theme-maple) |
 
-Only Minimal and Blue Topaz carry the MIT text inside the shipped `theme.css`. The other five are declared MIT in K127's theme catalog; there is no separate license file for them in the K127 repo. A theme a person loads from their own vault is user content, not a K127 dependency, and is credited in the Themes sheet while it is active.
+Only Minimal and Blue Topaz carry the MIT text inside the shipped `theme.css`. The other five are declared MIT in k127's theme catalog; there is no separate license file for them in the k127 repo. A theme a person loads from their own vault is user content, not a k127 dependency, and is credited in the Themes sheet while it is active.
 
 ## Maps
 
@@ -115,4 +115,4 @@ Map views in bases use Apple MapKit, a system framework. Map images load from Ap
 
 ## Requesting LGPL source or object files
 
-The LibXDiff source as used in K127 is [already downloadable](../source/libxdiff/). For K127 object files and build instructions needed to relink the app with a modified version of that library, [open an issue](https://github.com/diagonalcounty/k127-app/issues) on this repository. That is also how to [contact us](../support/) about the app.
+The LibXDiff source as used in k127 is [already downloadable](../source/libxdiff/). For k127 object files and build instructions needed to relink the app with a modified version of that library, [open an issue](https://github.com/diagonalcounty/k127-app/issues) on this repository. That is also how to [contact us](../support/) about the app.

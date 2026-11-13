@@ -8,21 +8,21 @@ title: Privacy Policy
 
 **Effective date:** 13 November 2026
 
-This policy describes how the K127 iPad app handles information. It is written from what the app at `diagonalcounty/k127` (`origin/main`, commit `917d9a8a`) actually does. It does not cover GitHub, GitLab, Gitea, Forgejo, or Apple, which have their own policies.
+This policy describes how the k127 iPad app handles information. It is written from what the app at `diagonalcounty/k127` (`origin/main`, commit `917d9a8a`) actually does. It does not cover GitHub, GitLab, Gitea, Forgejo, or Apple, which have their own policies.
 
 The copyright line is “2026 Jacob Roecker.” This page does not list a company name, mailing address, or email address.
 
 ## We do not collect your data
 
-K127 has no developer backend and does not require an account with us. The app does not include analytics, advertising, crash-reporting, or tracking SDKs that send information to us.
+k127 has no developer backend and does not require an account with us. The app does not include analytics, advertising, crash-reporting, or tracking SDKs that send information to us.
 
 The shipping privacy manifest (`PrivacyInfo.xcprivacy`) sets tracking to false, lists no tracking domains, and lists no collected data types. On the App Store privacy label, this is declared as **Data Not Collected**.
 
-Information that leaves this device goes to services **you** choose (a git host you control, or Apple’s MapKit when you open a map view), not to a K127 or developer server. Those cases are described below.
+Information that leaves this device goes to services **you** choose (a git host you control, or Apple’s MapKit when you open a map view), not to a k127 or developer server. Those cases are described below.
 
 ## Notes stay on this device
 
-A vault is the folder of notes on this device. Notes are ordinary files. K127 reads and writes that folder, and you can open the same files in another editor.
+A vault is the folder of notes on this device. Notes are ordinary files. k127 reads and writes that folder, and you can open the same files in another editor.
 
 Preferences, session state, and (on this device) reading position are stored locally, including in UserDefaults. They are not sent to us.
 
@@ -32,9 +32,9 @@ GitHub is optional. You can write with everything only on this device. When you 
 
 If you connect a host, the app sends your notes and git metadata to **your** repository on that host, over HTTPS, using the token you provided. We do not receive a copy.
 
-Connect GitHub asks for a classic personal access token with the `repo` scope. Checking `gist` is optional. If you enable it, K127 can sync your reading position across your devices through a gist on **your** GitHub account, not through the notes repository. There is no OAuth app.
+Connect GitHub asks for a classic personal access token with the `repo` scope. Checking `gist` is optional. If you enable it, k127 can sync your reading position across your devices through a gist on **your** GitHub account, not through the notes repository. There is no OAuth app.
 
-The token is stored in the Keychain on this device, not in the vault. You can also export settings to move a connection to another device. The default export does not include the token. If you choose to include it, that file is yours to keep private; K127 does not send it to us.
+The token is stored in the Keychain on this device, not in the vault. You can also export settings to move a connection to another device. The default export does not include the token. If you choose to include it, that file is yours to keep private; k127 does not send it to us.
 
 ## Sync diagnostics on iPad
 
@@ -56,11 +56,11 @@ On a Mac Catalyst build, which is not part of the planned 0.1.0 App Store listin
 
 ## Maps
 
-If you open a map view in a Bases file, K127 uses Apple MapKit to show pins from coordinates **already stored in those notes**. The app does not request your location, does not show your location, and does not prompt for location permission. Map images load from Apple Maps. The developer does not collect location.
+If you open a map view in a Bases file, k127 uses Apple MapKit to show pins from coordinates **already stored in those notes**. The app does not request your location, does not show your location, and does not prompt for location permission. Map images load from Apple Maps. The developer does not collect location.
 
 ## Children
 
-K127 is not directed at children and is not a Kids Category app. We do not collect personal information from anyone, including children.
+k127 is not directed at children and is not a Kids Category app. We do not collect personal information from anyone, including children.
 
 ## Contact
 

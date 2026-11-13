@@ -4,15 +4,15 @@ title: Support
 
 # Support
 
-K127 is a Markdown notes app for iPad. This page is a short getting-started guide, answers to common GitHub-connect questions, and how to get help.
+k127 is a Markdown notes app for iPad. This page is a short getting-started guide, answers to common GitHub-connect questions, and how to get help.
 
-K127 0.1.0 is a free early release. You should not expect everything to be finished. This early release does not include AI on iPad.
+k127 0.1.0 is a free early release. You should not expect everything to be finished. This early release does not include AI on iPad.
 
 ## Getting started
 
 You can read the same help in the app: **Help → Getting Started**. It works with no account and no network.
 
-A vault is the folder of notes on this device. Notes are ordinary files. K127 reads and writes that folder, and you can open the same files in another editor.
+A vault is the folder of notes on this device. Notes are ordinary files. k127 reads and writes that folder, and you can open the same files in another editor.
 
 **Three panes**
 
@@ -42,28 +42,28 @@ You can also choose **Open Folder…** if you already have a folder of notes on 
 
 ### How do I connect GitHub and create a token?
 
-K127 has no OAuth app. You paste a classic personal access token.
+k127 has no OAuth app. You paste a classic personal access token.
 
-1. In K127, open Connect GitHub (or Settings → Sync) and tap **Create a token**. On github.com, that opens a new classic token form with the **repo** box already checked.
+1. In k127, open Connect GitHub (or Settings → Sync) and tap **Create a token**. On github.com, that opens a new classic token form with the **repo** box already checked.
 2. Leave the **repo** box checked, then click **Generate token**.
-3. Copy the token and paste it into K127.
+3. Copy the token and paste it into k127.
 
-This token can read and write the repositories it is allowed to see. K127 stores it in the Keychain on this device and does not put it in the vault.
+This token can read and write the repositories it is allowed to see. k127 stores it in the Keychain on this device and does not put it in the vault.
 
 A few limits to know:
 
 - A **fine-grained** token cannot open someone else’s repository. It only reaches a repository you own or that your organization owns. If you need that kind of repository, use a classic token with the **repo** scope.
-- Checking **gist** is optional. If you enable it, K127 can sync your reading position across your devices through a gist on your GitHub account.
+- Checking **gist** is optional. If you enable it, k127 can sync your reading position across your devices through a gist on your GitHub account.
 - For **GitLab**, the token needs the **api** scope. For **Gitea** or **Forgejo**, the token needs repository read and write access (`write:repository`).
 
 ### What does HTTP 403 mean?
 
-A 403 from GitHub is not one thing. K127 classifies it and shows a specific sentence. Your notes stay on this device.
+A 403 from GitHub is not one thing. k127 classifies it and shows a specific sentence. Your notes stay on this device.
 
 | What you may see | What it means | What to try |
 |---|---|---|
-| HTTP 403, missing scope. The token needs the repo scope. | The token does not include the permission K127 uses for repositories. | Create a classic token with the **repo** box checked, then paste it again. |
-| GitHub is waiting for this token to be authorized for the organization. | The repository is behind organization single sign-on (SAML). | On github.com, authorize this token for the organization, then try again. If GitHub sent an authorize link, K127 includes it in the message. |
+| HTTP 403, missing scope. The token needs the repo scope. | The token does not include the permission k127 uses for repositories. | Create a classic token with the **repo** box checked, then paste it again. |
+| GitHub is waiting for this token to be authorized for the organization. | The repository is behind organization single sign-on (SAML). | On github.com, authorize this token for the organization, then try again. If GitHub sent an authorize link, k127 includes it in the message. |
 | This token is missing a permission… | The token is signed in, but it lacks a named permission for the notes repository. | On github.com, edit the token, allow that permission for the notes repository, then paste it here again. |
 | GitHub is busy. k127 will resume when GitHub allows more requests. | This 403 is a rate limit, not a bad token. | Wait, then try again. Your notes stay on this device. |
 | GitHub refused this repository for this token. | GitHub returned 403, and it was not classified as a missing scope, SSO, a named permission, or a rate limit. | Check the token and the repository, then try again. Your notes stay on this device. |
@@ -75,7 +75,7 @@ Related messages that are not 403:
 
 ## Licenses
 
-Third-party libraries and fonts in K127, including their license texts and a written offer for LGPL components, are on the [Licenses](../licenses/) page.
+Third-party libraries and fonts in k127, including their license texts and a written offer for LGPL components, are on the [Licenses](../licenses/) page.
 
 ## How to get help
 
