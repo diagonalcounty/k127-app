@@ -80,7 +80,7 @@ Third-party libraries and fonts in K127, including their license texts and a wri
 ## How to get help
 
 1. In the app, open **Help → Getting Started** or **Help → Keyboard Shortcuts**. Both work offline.
-2. If that does not answer it, [open a GitHub issue on `diagonalcounty/k127-site`](https://github.com/diagonalcounty/k127-site/issues).
+2. If that does not answer it, [open a GitHub issue on `diagonalcounty/k127-app`](https://github.com/diagonalcounty/k127-app/issues).
 3. For license texts or to request LGPL source and relink materials, see [Licenses](../licenses/).
 
 Please do not paste a personal access token into an issue or a screenshot.

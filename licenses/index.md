@@ -24,7 +24,7 @@ For at least three years after each release of K127, if you ask, we will provide
 - the corresponding source of those LGPL libraries as used in that release of K127, and
 - the K127 object files and build instructions needed to relink the app with a modified version of those libraries.
 
-To request that, [open an issue on this repository](https://github.com/diagonalcounty/k127-site/issues). Please name the K127 version (for example 0.1.0) and which library you need.
+To request that, [open an issue on this repository](https://github.com/diagonalcounty/k127-app/issues). Please name the K127 version (for example 0.1.0) and which library you need.
 
 **libiconv.** K127 dynamically links the system `libiconv` from the iOS SDK. It is not inside the xcframework. Apple's published libiconv sources have used different licenses in different drops (an older GNU libiconv drop labeled LGPL, and later Citrus / FreeBSD drops labeled BSD). Which drop a given K127 iOS build links has not been determined, so we do not list libiconv here as a definite LGPL component. If you believe the libiconv in your OS is LGPL and you need corresponding source or relink materials, open an issue and we will respond with what we can provide.
 
@@ -119,4 +119,4 @@ Map views in bases use Apple MapKit, a system framework. Map images load from Ap
 
 ## Requesting LGPL source or object files
 
-[Open an issue](https://github.com/diagonalcounty/k127-site/issues) on this repository. That is also how to [contact us](../support/) about the app.
+[Open an issue](https://github.com/diagonalcounty/k127-app/issues) on this repository. That is also how to [contact us](../support/) about the app.
