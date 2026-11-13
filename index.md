@@ -14,3 +14,4 @@ K127 does not require an account with us. Notes stay on this device unless you c
 
 - [Privacy policy](privacy/)
 - [Support and getting started](support/)
+- [Licenses](licenses/)

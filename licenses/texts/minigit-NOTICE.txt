@@ -1,0 +1,33 @@
+MiniGit
+Source repository: https://github.com/diagonalcounty/MiniGit
+Upstream: https://github.com/light-tech/MiniGit
+Pinned revision: bc14e1fdbe2eb24cf012a5776ff9759eb21bb174
+The Xcode requirement is this revision, not a branch name.
+Recorded in apps/ipados/k127.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
+and in project.pbxproj. No version tag.
+
+Separately maintained. K127 does not vendor these sources. It links only the
+XGit product from that package.
+
+Link: statically linked. Package.swift at the pinned revision declares the
+XGit library without a dynamic product type. Its libgit2 dependency is a
+binary target: an xcframework of static archives built by LibGit2-On-iOS
+v1.3.1 (BUILD_SHARED_LIBS=NO, then libtool -static). The Xcode project links
+XGit in the Frameworks phase and does not embed a MiniGit framework. System
+zlib and libiconv are dynamic system libraries. At this revision Package.swift
+sets .linkedLibrary("z") and .linkedLibrary("iconv") on both the XGit target and the MiniGit target.
+K127 links the XGit product. See their notices.
+
+License: GPL-2.0 with libgit2's linking exception. The exception permits
+linking the compiled library into a program under other terms, including
+K127's MIT license. It does not relicense MiniGit or libgit2.
+
+Upstream's README states the license is the same as libgit2. LICENSE at
+this revision is a verbatim copy of libgit2 COPYING at tag v1.3.1:
+https://github.com/diagonalcounty/MiniGit/blob/bc14e1fdbe2eb24cf012a5776ff9759eb21bb174/LICENSE
+The same text is bundled in this app as libgit2-NOTICE.
+
+Which libraries the xcframework contains or links is recorded in NOTICE at
+this revision:
+https://github.com/diagonalcounty/MiniGit/blob/bc14e1fdbe2eb24cf012a5776ff9759eb21bb174/NOTICE
+Each of those libraries has its own notice in this app.

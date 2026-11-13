@@ -1,0 +1,63 @@
+PCRE 8.45 (2021-06-15)
+Source named by the LibGit2-On-iOS v1.3.1 build script: https://github.com/light-tech/PCRE.git
+The script clones that repository with no commit pin. Headers inside the
+published xcframework identify PCRE 8.45, dated 2021-06-15. The exact git
+commit cloned on 2022-07-06 was not recorded.
+
+Statically present inside libgit2.xcframework (https://github.com/light-tech/LibGit2-On-iOS/releases/download/v1.3.1/libgit2.xcframework.zip, checksum 332bfb255649f2295d5530e4abed4e81803acdc6abf18a266695fdb447ca3df2), which
+MiniGit (https://github.com/diagonalcounty/MiniGit) revision bc14e1fdbe2eb24cf012a5776ff9759eb21bb174 downloads. The build script builds PCRE as a
+static library and libtool -static merges every lib/*.a into libgit2.a.
+Headers/pcre.h reports PCRE_MAJOR 8, PCRE_MINOR 45, PCRE_DATE 2021-06-15.
+Archive members include pcre_compile.c.o, pcre_exec.c.o, and pcreposix.c.o.
+
+License: BSD terms printed in that shipped pcre.h. Copyright (c) 1997-2014
+University of Cambridge. The text below is the license comment from
+pcre.h.generic on light-tech/PCRE, which carries the same version macros.
+
+Whether libgit2's objects call this PCRE was not confirmed. libgit2 1.3.1
+leaves REGEX_BACKEND empty, and CMake then prefers regcomp_l when that symbol
+exists. On Apple that can select the system regex instead of PCRE. The PCRE
+license still applies to the PCRE objects shipped in the archive.
+
+libgit2 v1.3.1 COPYING says "The regex library (deps/regex/) is licensed under
+the GNU LGPL." Tag v1.3.1 has deps/pcre, not deps/regex. deps/pcre/COPYING only
+points at the PCRE distribution's LICENCE and does not include it. The license
+used here is the BSD text in pcre.h, not that LGPL paragraph.
+
+/*************************************************
+*       Perl-Compatible Regular Expressions      *
+*************************************************/
+
+/* This is the public header file for the PCRE library, to be #included by
+applications that call the PCRE functions.
+
+           Copyright (c) 1997-2014 University of Cambridge
+
+-----------------------------------------------------------------------------
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright notice,
+      this list of conditions and the following disclaimer.
+
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+
+    * Neither the name of the University of Cambridge nor the names of its
+      contributors may be used to endorse or promote products derived from
+      this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+-----------------------------------------------------------------------------
+*/

@@ -1,0 +1,35 @@
+wildmatch
+Source: https://github.com/libgit2/libgit2 tag v1.3.1 COPYING, and wildmatch.c in that tree.
+Copyright Rich Salz.
+
+Statically linked inside libgit2.xcframework (https://github.com/light-tech/LibGit2-On-iOS/releases/download/v1.3.1/libgit2.xcframework.zip, checksum 332bfb255649f2295d5530e4abed4e81803acdc6abf18a266695fdb447ca3df2), which
+MiniGit (https://github.com/diagonalcounty/MiniGit) revision bc14e1fdbe2eb24cf012a5776ff9759eb21bb174 downloads. The archive contains
+wildmatch.c.o.
+
+License: BSD, as printed in libgit2 v1.3.1 COPYING:
+
+The bundled wildmatch code is licensed under the BSD license:
+
+Copyright Rich Salz.
+All rights reserved.
+
+Redistribution and use in any form are permitted provided that the
+following restrictions are are met:
+
+1.  Source distributions must retain this entire copyright notice
+    and comment.
+2.  Binary distributions must include the acknowledgement ``This
+    product includes software developed by Rich Salz'' in the
+    documentation or other materials provided with the
+    distribution.  This must not be represented as an endorsement
+   or promotion without specific prior written permission.
+3.  The origin of this software must not be misrepresented, either
+    by explicit claim or by omission.  Credits must appear in the
+    source and documentation.
+4.  Altered versions must be plainly marked as such in the source
+    and documentation and must not be misrepresented as being the
+    original software.
+
+THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.

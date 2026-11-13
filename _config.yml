@@ -9,3 +9,10 @@ theme: minima
 
 exclude:
   - README.md
+
+header_pages:
+  - index.md
+  - privacy/index.md
+  - support/index.md
+  - licenses/index.md
+

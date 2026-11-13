@@ -1,0 +1,13 @@
+winhttp.c.o (unverified archive member)
+The iOS static archive inside libgit2.xcframework (https://github.com/light-tech/LibGit2-On-iOS/releases/download/v1.3.1/libgit2.xcframework.zip, checksum 332bfb255649f2295d5530e4abed4e81803acdc6abf18a266695fdb447ca3df2),
+downloaded by MiniGit (https://github.com/diagonalcounty/MiniGit) revision bc14e1fdbe2eb24cf012a5776ff9759eb21bb174, contains one member named
+winhttp.c.o.
+
+libgit2 v1.3.1 COPYING licenses deps/winhttp under the GNU LGPL, version 2.1
+or later, for the MinGW import library (Copyright (C) 2007 Francois Gouget).
+libgit2 also has its own transport source under that filename. No separate
+winhttp import-library members were found. Whether this object contains any
+of the LGPL deps/winhttp code was not checked at symbol level.
+
+NEEDS LEGAL REVIEW. This notice does not assert that the object is LGPL, and
+it does not assert that the object is free of that code.

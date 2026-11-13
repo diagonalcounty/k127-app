@@ -1,0 +1,38 @@
+LibXDiff
+Source: https://github.com/libgit2/libgit2 tag v1.3.1, src/xdiff/xdiff.h
+Copyright (C) 2003 Davide Libenzi
+
+Statically linked inside libgit2.xcframework (https://github.com/light-tech/LibGit2-On-iOS/releases/download/v1.3.1/libgit2.xcframework.zip, checksum 332bfb255649f2295d5530e4abed4e81803acdc6abf18a266695fdb447ca3df2), which
+MiniGit (https://github.com/diagonalcounty/MiniGit) revision bc14e1fdbe2eb24cf012a5776ff9759eb21bb174 downloads. Archive members: xdiffi.c.o,
+xemit.c.o, xprepare.c.o, xutils.c.o, xmerge.c.o, xhistogram.c.o,
+xpatience.c.o.
+
+NEEDS LEGAL REVIEW. src/xdiff/xdiff.h says GNU Lesser General Public License,
+version 2.1 or any later version. libgit2's COPYING states GPL-2.0 with a
+linking exception and does not mention LibXDiff. This notice does not treat
+that exception as clearing the LGPL header, and it does not assert that
+shipping LibXDiff inside K127 is resolved.
+
+Header text at tag v1.3.1:
+
+/*
+ *  LibXDiff by Davide Libenzi ( File Differential Library )
+ *  Copyright (C) 2003  Davide Libenzi
+ *
+ *  This library is free software; you can redistribute it and/or
+ *  modify it under the terms of the GNU Lesser General Public
+ *  License as published by the Free Software Foundation; either
+ *  version 2.1 of the License, or (at your option) any later version.
+ *
+ *  This library is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ *  Lesser General Public License for more details.
+ *
+ *  You should have received a copy of the GNU Lesser General Public
+ *  License along with this library; if not, see
+ *  <http://www.gnu.org/licenses/>.
+ *
+ *  Davide Libenzi <davidel@xmailserver.org>
+ *
+ */

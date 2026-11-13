@@ -1,0 +1,23 @@
+libiconv (system library)
+Dynamically linked. Not vendored. Not inside the xcframework.
+
+MiniGit (https://github.com/diagonalcounty/MiniGit) revision bc14e1fdbe2eb24cf012a5776ff9759eb21bb174 sets .linkedLibrary("iconv") on both the XGit target and the MiniGit target. The upstream
+README tells XGit-only clients to add libiconv.tbd. ntlmclient's
+unicode_iconv.c.o calls iconv. The package platforms are iOS 14 and macOS 11.
+That does not pin an SDK drop of libiconv.
+
+NEEDS LEGAL REVIEW. The license depends on which system libiconv the build
+links. This notice does not pick a license and does not assert that either
+drop below is the one K127 links, or that linking it is resolved.
+
+Apple's published sources changed license:
+- Tag libiconv-64 (imported 2022-09-30) has OpenSourceLicense LGPL,
+  OpenSourceVersion 1.11, and OpenSourceURL
+  http://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.11.tar.gz, with COPYING.LIB
+  in the tree.
+  https://github.com/apple-oss-distributions/libiconv/tree/libiconv-64
+- Tag libiconv-99 (imported 2024-03-26) is a different tree. Its
+  libiconv.txt states BSD-2-Clause, BSD-3-Clause, and BSD-2-Clause-FreeBSD.
+  https://github.com/apple-oss-distributions/libiconv/blob/libiconv-99/libiconv.txt
+
+Which of those a given app build links was not determined.
